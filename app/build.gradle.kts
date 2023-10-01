@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -56,4 +57,6 @@ dependencies {
     //Scalable Size
     implementation ("com.intuit.ssp:ssp-android:1.1.0")
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
+
+
 }

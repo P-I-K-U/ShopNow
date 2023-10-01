@@ -26,12 +26,6 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // To Change Status Bar Color
-        requireActivity().window.
-        clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-        requireActivity().window.statusBarColor = Color.WHITE
-
-
         val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
         binding.onBoardNext.setOnClickListener {
             viewPager?.currentItem = 1
